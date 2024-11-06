@@ -9,7 +9,8 @@
 - **Personalized Insights**: Tailored information for health-conscious individuals and those with dietary restrictions.
 
 ## Getting Started
-
+Here is demo of our project ->
+[demo](https://youtu.be/-gKESrcgg5E)
 ### Prerequisites
 
 - Python 3.8+
