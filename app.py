@@ -19,6 +19,13 @@ html_for_home = """
             text-decoration-thickness: 2px;
             text-decoration-color: orange;
         }
+
+        .desc {
+            font-size: 20px;
+            font-family: 'Monospace';
+            color: orange;
+            text-align: center;
+        }
     </style>
 """
 
@@ -29,9 +36,9 @@ def analyze_ingredients(image):
     return response.candidates[0].content.parts[0].text
 
 st.markdown("<h1 class='header'> Food Intel - Ingredients Analysis </h1>", unsafe_allow_html=True)
-st.html(html_for_home)
-
+st.markdown("<p class='desc'> Food Intel is a service that analyzes food ingredients to provide insights on quality, nutritional value, and potential allergens. Aimed at promoting transparency, it empowers consumers to make informed choices, catering to health-conscious individuals and those with dietary needs by breaking down the contents of food products in detail. <p>" , unsafe_allow_html = True)
 st.markdown("### Enter the Image")
+st.html(html_for_home)
 
 uploaded_image = st.file_uploader("Upload an image of the product", type=["jpg", "jpeg", "png" , "webp"])
 
